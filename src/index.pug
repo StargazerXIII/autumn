@@ -23,7 +23,7 @@ html(lang="en")
                       li.menu__item
                         a.menu__link #{item}
               .header_social
-                .social.icons
+               // .social.icons
                   - var icons = ["insta", "vk", "github"]
                   ul.social
                     each item in icons
@@ -32,8 +32,8 @@ html(lang="en")
                             +icon(item, "social__icon")
             .person__content
               .person-info
-                .person-info__desc Личный сайт
-                .person-info__name Вадим Кузнецов
+                .person-info__desc Личный сайт<br> веб-разработчика
+                .person-info__name Вадим<br> Кузнецов
             .person__scroll--btn
               a(href="#").scroll-down-btn Следующая страница
       //.maincontent
