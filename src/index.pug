@@ -36,6 +36,38 @@ html(lang="en")
                 .person-info__name Вадим<br> Кузнецов
             .person__scroll--btn
               a(href="#").scroll-down-btn Следующая страница
+        .section.section-about
+          .container
+            .about
+              .about__left
+                .about-info
+                  .about-info__avatar
+                    .avatar
+                      +image("content/user.jpg", "avatar__img")
+                  .about-info__content
+                    -
+                      var  persondata =[
+                        ["Проживаю", "Москва"],
+                        ["Возраст", "36 лет"],
+                        ["Родился", "25 ноября 1983"],
+                      ]
+                    table.about-info__data
+                      tbody.about-info__data-body
+                        each row in persondata
+                          tr
+                            td #{row[0]}
+                            td #{row[1]}
+              .about__right
+
+      
+      
+      
+      
+
+      
+      
+      
+      
       //.maincontent
         +image('content/user.jpg', 'user-pic')
         +icon('link', 'link-class')
