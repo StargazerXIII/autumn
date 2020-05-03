@@ -37,28 +37,27 @@ html(lang="en")
             .person__scroll--btn
               a(href="#").scroll-down-btn Следующая страница
         .section.section-about
-          .container
-            .about
-              .about__left
-                .about-info
-                  .about-info__avatar
-                    .avatar
-                      +image("content/user.jpg", "avatar__img")
-                  .about-info__content
-                    -
-                      var  persondata =[
-                        ["Проживаю", "Москва"],
-                        ["Возраст", "36 лет"],
-                        ["Родился", "25 ноября 1983"],
-                      ]
-                    table.about-info__data
-                      tbody.about-info__data-body
-                        each row in persondata
-                          tr
-                            td #{row[0]}
-                            td #{row[1]}
-              .about__right
-                h4.about__prolog Привет, меня зовут
+          .container.container__about
+            .about__left
+              .about-info
+                .about-info__avatar
+                  .avatar
+                    +image("content/user.jpg", "avatar__img")
+                .about-info__content
+                  -
+                    var  persondata =[
+                      ["Проживаю", "Москва"],
+                      ["Возраст", "36 лет"],
+                      ["Родился", "25 ноября 1983"],
+                    ]
+                  table.about-info__data
+                    tbody.about-info__data-body
+                      each row in persondata
+                        tr
+                          td #{row[0]}
+                          td #{row[1]}
+            .about__right
+                h4.about__pretitle Привет, меня зовут
                 h2.about__title Вадим Кузнецов
                 .about__text Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
                 .about__ps Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
