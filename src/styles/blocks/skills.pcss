@@ -1,14 +1,37 @@
 .section-skills{
   height: 100vh;
   min-height: 650px;
+  background-image: url(../images/backgrounds/4bg.png);
+  
+  &__title {
+    position: absolute;
+    margin: 150px 0 0;
+    left: 335px;
+    
+    &-content {
+      width: 590px;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+  }
 }
 
-.section-skills__title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.blocktitle{
+  &__text {
+    color: #ffffff;
+    margin-bottom: 60px;
+  }
+
+  &__desc p{
+    opacity: 0.5;
+    line-height: 30px;
+  }
 }
 
-.blocktitle__text {
-  color: black;
+.skills-row__list{
+  display: flex;
 }
