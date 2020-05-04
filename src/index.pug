@@ -64,29 +64,30 @@ html(lang="en")
                 .about__ps 
                   p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
       .section.section-skills
-        .section-skills__title
-          .section-skills__title-content
-            .blocktitle 
-              h2.blocktitle__text Чем я могу быть полезен вам
-                .blocktitle__desc
-                 p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
-        .section-skills__content
-          - 
-            var items = [
-              ['Frontend', ["HTML5", "CSS3", "Javascript", "Jquery и Vue.js"]],
-              ["Workflow", ["GIT", "Terminal", "Gulp", "Webpack"]],
-            ]
-          ul.skills-list
-            each row in items
-              li.skills-list__item.skills-row
-                .skills-row__title #{row[0]}
-                ul.skills-row__list
-                    each cell in row[1]
-                      li.skills-row__item
-                        .skill
-                          .skill__circle
-                          .skill__circle
-                          .skill__title=cell
+        .container.container__skills
+          .section-skills__title
+            .section-skills__title-content
+              .blocktitle 
+                h2.blocktitle__text Чем я могу быть полезен вам
+                  .blocktitle__desc
+                  p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+          .section-skills__content
+            - 
+              var items = [
+                ['Frontend', ["HTML5", "CSS3", "Javascript", "Jquery и Vue.js"]],
+                ["Workflow", ["GIT", "Terminal", "Gulp", "Webpack"]],
+              ]
+            ul.skills-list
+              each row in items
+                li.skills-list__item.skills-row
+                  .skills-row__title #{row[0]}
+                  ul.skills-row__list
+                      each cell in row[1]
+                        li.skills-row__item
+                          .skill
+                            .skill__circle
+                            .skill__circle
+                            .skill__title=cell
         
       //.maincontent
         +image('content/user.jpg', 'user-pic')
