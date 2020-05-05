@@ -1,28 +1,31 @@
 .section-others {
   height: 100vh;
   min-height: 650px;
+  background-image: linear-gradient(to right, #36383C 0%, transparent), url(../images/backgrounds/5bg.png);
   &__title-btn{
     margin-top: 140px;
   }
-}
-
-arrow {
-  &__left{
-    font-family: 'Mukta', sans-serif;
-    font-size: 1rem;
-    border: 2px solid #313131;
-    background-color: transparent;
-    color: #313131;
-    padding: 5px 30px;
-    border-radius: 25px;
-    text-transform: lowercase;
-    cursor: pointer;
-    outline: none;
+  &__title-content{
     display: flex;
     align-items: center;
-    margin: 10px 0;
   }
-  &__right{
+}
 
+.otherstitle{
+  margin-right:77px;
+}
+
+.arrow {
+  border: 1px solid #313131;
+  background-color: transparent;
+  color: #313131;
+  padding: 20px;
+  border-radius: 50%;
+  outline: none;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  &__left{
+    margin-right: 20px;
   }
 }
