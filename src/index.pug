@@ -122,6 +122,10 @@ html(lang="en")
                 .desclink__text
                   p Посмотреть сайт
       .section.section-others
+        .section-others__leaves
+          .leaf__main
+            .leaf__main--img
+             img(src="./src/images/content/leaf.png", alt="")
         .container.container__others
           .others__title-btn
             .title-btn
@@ -144,6 +148,70 @@ html(lang="en")
                       h4 Ковальчук Дмитрий
                     .review__athr-position
                       p Основатель Loftschool
-
-
-
+              .review
+                .review__text
+                  p Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах
+                .review__content
+                  .review__content-avatar
+                    .content__avatar
+                    +image("content/user.jpg", "avatar__img")
+                  .review__athr
+                    .review__athr-name
+                      h4 Владимир Сабанцев
+                    .review__athr-position
+                      p Владимир Сабанцев
+      .section.feedback
+        .container.feedback__container
+          h2.section-title.section-title--white Связаться со мной
+            form.feedback__form(action="")#form
+              .feedback__form-wrapper
+                .feedback__row
+                  .feedback__block
+                    label.feedback__label.feedback__label--user
+                      .feedback__label-wrapper
+                        span.feedback__title Введите Ваше имя
+                        input.feedback__field(required)
+                  .feedback__block
+                    label.feedback__label.feedback__label--envelope
+                      .feedback__label-wrapper
+                        span.feedback__title Введите Ваш email
+                        input(type="email" required).feedback__field
+                .feedback__row.feedback__row--big-margin-bottom
+                  .feedback__block
+                    label.feedback__label.feedback__label--message
+                      .feedback__label-wrapper
+                        span.feedback__title Сообщение к письму
+                        textarea.feedback__field.feedback__field--textarea(required)
+                .feedback__buttons
+                  button.button Отправить
+      footer.footer
+        .container.footer__container
+          .footer__left
+            .footer__copyright
+              p &copy2020
+            .footer__developer
+              .footer__developer-name Вадим Кузнецов
+              .footer__developer-info Личный сайт веб-разработчика
+          .footer__right
+            .footer__menu
+              nav.nav
+                -  var nav = ["Главная","Обо мне","Навыки","Работы","Отзывы","Связаться"];
+                ul.nav__list
+                  each item in nav
+                    li.nav__item
+                      a.nav__link #{item}
+            .footer__info
+              .footer__links
+                .footer__links-desc
+                  p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+                .socials
+                  - var icons = ["insta", "vk", "github"]
+                  ul.socials__list
+                    each item in icons
+                      li.socials__item
+                        a.socials__link(href="")
+                          +icon(item,"socials__icon")
+              .footer__quote
+                .footer__quote-text
+                  p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает где вы живете
+                .footer__quote-author Martin Golding
