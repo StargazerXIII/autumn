@@ -68,7 +68,7 @@ html(lang="en")
           .section-skills__title
             .section-skills__title-content
               .blocktitle 
-                h2.blocktitle__text Чем я могу быть полезен вам
+                h3.blocktitle__text Чем я могу быть полезен вам
               .blocktitle__desc
                 p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
           .section-skills__content
@@ -88,7 +88,36 @@ html(lang="en")
                             .skill__circle
                             .skill__circle
                             .skill__title=cell
-        
+      .section.section-port
+        .container.container__port 
+          .port__left
+            .port-info
+              .port-info__title
+                .porttitle
+                  h2.porttitle__text Мои работы
+              .port-info__number
+                .number
+                .number__text 2
+              .port-info__slider
+                .slider
+                  .slider__mainimage
+                    img(src="./src/images/content/slider1.png", alt="")
+                  .slider__thumbnails
+                    ul.thumbnails
+          .port__right
+            .port-desc
+              .port-desc__tags
+               ul.tags
+                li.tag HTML
+                li.tag CSS
+                li.tag Javascript
+              .port-desc__title
+                .desctitle
+                  h3.porttitle__text Сайт школы образования
+              .port-desc__text
+                .desctext
+                  p.desctext__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                
       //.maincontent
         +image('content/user.jpg', 'user-pic')
         +icon('link', 'link-class')
