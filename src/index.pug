@@ -57,7 +57,7 @@ html(lang="en")
                           td #{row[0]}
                           td #{row[1]}
             .about__right
-                h4.about__pretitle Привет, меня зовут
+                p.about__pretitle Привет, меня зовут
                 h2.about__title Вадим Кузнецов
                 .about__text 
                   p Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
@@ -123,13 +123,27 @@ html(lang="en")
                   p Посмотреть сайт
       .section.section-others
         .container.container__others
-          .section-others__title-btn
+          .others__title-btn
             .title-btn
               .title-btn__title
                 h2.otherstitle__text Что обо мне говорят
               .title-btn__btn
               button.arrow.arrow__left
               button.arrow.arrow__right
+          .others__content
+            .others__content-review
+              .review
+                .review__text
+                  p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+                .review__content
+                  .review__content-avatar
+                    .content__avatar
+                    +image("content/user.jpg", "avatar__img")
+                  .review__athr
+                    .review__athr-name
+                      h4 Ковальчук Дмитрий
+                    .review__athr-position
+                      p Основатель Loftschool
 
 
 
