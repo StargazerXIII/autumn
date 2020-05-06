@@ -188,18 +188,19 @@ html(lang="en")
         .container.footer__container
           .footer__left
             .footer__copyright
-              p &copy2020
+              span &copy2020
             .footer__developer
               .footer__developer-name Вадим Кузнецов
-              .footer__developer-info Личный сайт веб-разработчика
+              .footer__developer-info 
+              p Личный сайт веб-разработчика
           .footer__right
             .footer__menu
               nav.nav
                 -  var nav = ["Главная","Обо мне","Навыки","Работы","Отзывы","Связаться"];
-                ul.nav__list
+                ul.menu__list
                   each item in nav
-                    li.nav__item
-                      a.nav__link #{item}
+                    li.menu__item
+                      a.menu__link #{item}
             .footer__info
               .footer__links
                 .footer__links-desc
@@ -209,7 +210,7 @@ html(lang="en")
                   ul.socials__list
                     each item in icons
                       li.socials__item
-                        a.socials__link(href="")
+                        button.socials__link(href="")
                           +icon(item,"socials__icon")
               .footer__quote
                 .footer__quote-text

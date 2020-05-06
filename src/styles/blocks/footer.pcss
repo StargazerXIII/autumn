@@ -1,51 +1,46 @@
 .footer {
   background-color: #222427;
-}
-
-.footer__container {
-  display: flex;
-  padding: 100px 0;
-  justify-content: space-between;
-}
-
-.footer__left {
-  display: flex;
+  &__container {
+    display: flex;
+    padding: 100px 0;
+    justify-content: space-between;
+  }
+  &__left {
+  display:block;
   width: 25%;
-  justify-content: space-between;
-}
-
-.footer__developer {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__right {
-  width: 63%;
-}
-
-.footer__copyright {
+  } 
+  &__right {
+  width: 75%;
+  }
+  &__copyright {
+  opacity: 0.1;
+  color: #ffffff;
   font-size: 48px;
-  font-weight: 600;
-}
-
-
-.footer__developer-name {
+  font-weight: 400;
+  margin-bottom: 30px;
+  }
+  &__developer {
+    display: flex;
+    flex-direction: column;
+    &-name{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6vh;
+    text-transform: uppercase;
+    }
+  }
+  &__menu{
   color: white;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 6vh;
-  text-transform: uppercase;
-}
-
-.footer__menu .nav {
-  color: white;
-  margin-bottom: 34px;
-}
-
-.footer__info {
+  margin-bottom: 70px;
+  }
+  &__info{
   display: flex;
   justify-content: space-between;
+  }
 }
+
+
 
 .footer__links {
   width: 38%;
@@ -60,11 +55,11 @@
 }
 
 .footer__quote-text {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .footer__quote-author {
-  color: white;
+  color: #ffffff;
   font-style: italic;
 }
 
@@ -78,10 +73,10 @@
   justify-content: center;
   align-items: center;
 
-    &:hover {
-      border: 1px solid #5500f2;
-      transition: all .7s;
-    }
+      &:hover {
+        border: 1px solid #5500f2;
+        transition: all .7s;
+      }
   }
 }
 
