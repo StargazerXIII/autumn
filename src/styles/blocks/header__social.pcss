@@ -1,0 +1,37 @@
+.social__list {
+  display: flex;
+  @include desktop {
+    justify-content: flex-end;
+    margin-right: 16%;
+  }
+}
+
+.social__link:hover {
+  .social__icon {
+    fill: white;
+  }
+}
+
+.social__icon {
+  width: 27px;
+  height: 27px;
+}
+
+.social__item {
+  margin-right: 40px;
+  @include tablets {
+    margin-right: 4%;
+  }
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__icon {
+  fill: #534d5d;
+}
+
+.social__link:hover .social__icon {
+  fill: #5500f2;
+}
