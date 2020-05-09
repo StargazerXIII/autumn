@@ -1,5 +1,4 @@
 .section-skills{
-  height: 100vh;
   min-height: 650px;
   background-image: url(../images/backgrounds/4bg.png);
   
@@ -10,6 +9,7 @@
     
     &-content {
       width: 590px;
+      margin-bottom: 96px;
     }
   }
 
@@ -32,6 +32,42 @@
   }
 }
 
-.skills-row__list{
+.skills-row{
+  &__title{
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  }
+  &__list{
   display: flex;
+  }
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
+
+.skill {
+  display: flex;
+  position: relative;
+  width: 200px;
+  height: 200px;
+    
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    opacity: 0.5;
+  }
+  
+  circle:last-child {
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+  }
 }
